@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko Online Saya</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: rgb(232, 232, 232);
+            text-align: center;
+            padding: 1rem;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: #eeeeee;
+            padding: 1rem;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #666;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 2rem;
+        }
+
+        .product {
+            border: 1px solid #00ff15;
+            border-radius: 5px;
+            width: 200px;
+            margin: 1rem;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .product img {
+            width: 100%;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #008CBA;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #0074A6;
+        }
+
+        footer {
+            background-color: #333;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Toko Online Saya</h1>
+    </header>
+
+    <nav>
+        <a href="#beranda">Beranda</a>
+        <a href="#produk">Produk</a>
+        <a href="#kontak">Kontak</a>
+    </nav>
+
+    <div class="container">
+        <div class="product">
+            <img src="gambar_produk1.jpg" alt="Produk 1">
+            <h3>Produk 1</h3>
+            <p>Rp. 100.000,-</p>
+            <a href="checkout.html" class="btn">Pesan Sekarang</a>
+        </div>
+
+        <div class="product">
+            <img src="gambar_produk2.jpg" alt="produk 2">
+            <h3>Produk 2</h3>
+            <p>Rp. 200.000,-</p>
+            <a href="checkout.html" class="btn">Pesan Sekarang</a>
+        </div>
+
+        <!-- Tambahkan produk lainnya sesuai kebutuhan -->
+    </div>
+
+    <footer>
+        &copf;2023 ediloupatty
+    </footer>
+    </html>

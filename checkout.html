@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Checkout - Toko Online Saya</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* (style Anda) */
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Toko Online Saya</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Beranda</a>
+        <a href="index.html#produk">Produk</a>
+        <a href="index.html#kontak">Kontak</a>
+    </nav>
+
+    <div class="container">
+        <div class="checkout-info">
+            <h2>Halaman Checkout</h2>
+            <p>Silakan isi informasi berikut untuk menyelesaikan pemesanan Anda.</p>
+        </div>
+
+        <!-- Perhatikan perubahan pada baris berikut -->
+        <form action="submit_order_email.php" method="POST">
+            <label for="name">Nama:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="address">Alamat:</label>
+            <input type="text" id="address" name="address" required>
+
+            <label for="phone">No. Telepon:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <button type="submit">Selesaikan Pesanan</button>
+        </form>
+    </div>
+
+    <footer>
+        &copy; 2023 Toko Online Edi loupatty
+    </footer>
+</body>
+</html>
